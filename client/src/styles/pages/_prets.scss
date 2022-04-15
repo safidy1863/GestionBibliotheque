@@ -1,0 +1,125 @@
+.Prets {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  .listePret {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    max-height: 90vh;
+    overflow-y: scroll;
+    position: relative;
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $couleur3;
+    }
+  }
+  .right-Pret {
+    border-left: $couleur3 groove 3px;
+    height: 90vh;
+
+    max-height: 560px;
+    overflow-y: scroll;
+    h4 {
+      text-align: center;
+      color: $couleur3;
+    }
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $couleur3;
+    }
+  }
+  .retour {
+    width: 250px;
+    padding: 10px;
+    margin: 5px 10px;
+    position: relative;
+    background-color: $couleur4;
+    border-radius: 4px;
+    cursor: pointer;
+
+    .suppPret {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      display: none;
+    }
+
+    &:hover {
+      background-color: rgba(43, 5, 73, 0.693);
+      .suppPret {
+        display: block;
+      }
+    }
+  }
+  .formAjoutPret {
+    background-color: $couleur1;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    color: black;
+  }
+
+  .ensembleListe {
+    display: flex;
+    padding: 10px;
+    color: rgba(245, 245, 245, 0.981);
+    max-height: 300px;
+    overflow-y: scroll;
+    font-size: 20px;
+    p {
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $couleur3;
+    }
+    .listeLecteur {
+      margin-right: 15px;
+    }
+    .listeNumero {
+      display: block;
+      width: 100%;
+    }
+    label {
+      padding: 5px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    input[type="radio"] {
+      display: none;
+
+      &:checked + label {
+        background-color: white;
+        color: $couleur3;
+        text-decoration: lines;
+        border-radius: 5px;
+      }
+    }
+  }
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    background-color: $couleur3;
+    cursor: pointer;
+  }
+}

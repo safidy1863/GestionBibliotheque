@@ -1,0 +1,38 @@
+.pret {
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  background-color: rgb(133, 128, 128);
+  z-index: 30;
+  border-radius: 5px;
+  width: 23%;
+  position: relative;
+
+  .fa-circle-left,
+  .actions {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  &:hover {
+    background-color: honeydew;
+    color: $couleur1;
+
+    h5 {
+      color: $couleur1;
+    }
+
+    .fa-circle-left {
+      display: block;
+    }
+    .actions {
+      display: block;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    color: rgb(29, 95, 6);
+  }
+}

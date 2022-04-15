@@ -1,0 +1,97 @@
+.Home {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  max-height: 100vh;
+  .date {
+    padding: 10px;
+    background-color: rgb(17, 5, 51);
+    border-radius: 5px;
+    border: ridge 2px $couleur4;
+
+    .fa-calendar-xmark {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  }
+  .totalContenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+
+    .total {
+      margin-right: 2%;
+      padding: 10px;
+      width: 100%;
+      background-color: $couleur4;
+      border-radius: 5px;
+      &:hover{
+        background-color: rgba(43, 5, 73, 0.693);
+        color:green;
+       
+      }
+    }
+  }
+  .histogramme {
+    margin-top: 10px;
+    background-color: $couleur4;
+    height: 72vh;
+    margin-right: 2%;
+    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+  .situations{
+    margin-top:40px ;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  
+    .situation{
+      background-color: rgba(255, 255, 255, 0.124);
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover{
+        background-color: rgba(43, 5, 73, 0.693);
+        color:green;
+      }
+    }
+  }
+  .etudiants {
+    margin-top: 20px;
+    .etudiant {
+      display: grid;
+      grid-template-columns: 25% 75%;
+      margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.124);
+      padding: 10px;
+      border-radius: 5px;
+      img {
+        object-fit: cover;
+        width: 60px;
+        height: 80px;
+        border-radius: 5px;
+      }
+      div {
+        margin-top: 5px;
+        display: grid;
+        grid-template-rows: 50% 25% 25%;
+        h5 {
+          color: rgba(255, 255, 255, 0.7);
+        }
+        h6 {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        h2{
+          color: &couleur2;
+          text-shadow: 3px honeydew;
+        }
+      }
+    }
+  }
+  .copyright{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
+}

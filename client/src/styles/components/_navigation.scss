@@ -1,0 +1,39 @@
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: $couleur1;
+  height: 100vh;
+  align-items: center;
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .logo {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  img {
+    width: 100px;
+    margin-left: 35px;
+  }
+  .nav-active {
+    background-color: $couleur2;
+    border-right: 10px solid $couleur3;
+  }
+  h4 {
+    font-family: "French Script MT";
+    font-size: 40px;
+    color: rgb(43, 220, 226);
+    text-shadow: 3px 4px #091014;
+    animation: mymove 3s infinite;
+    @keyframes mymove {
+      from {
+        color: rgb(43, 220, 226);
+      }
+      to {
+        color: rgb(4, 8, 59);
+      }
+    }
+  }
+}
